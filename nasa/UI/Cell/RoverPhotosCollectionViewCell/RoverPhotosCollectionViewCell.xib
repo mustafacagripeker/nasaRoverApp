@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RoverPhotosCollectionViewCell" id="gTV-IL-0wX" customClass="RoverPhotosCollectionViewCell" customModule="nasa" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="248" height="234"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="248" height="234"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IAj-m6-aFU">
+                        <rect key="frame" x="0.0" y="0.0" width="248" height="234"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mrt-4d-CCi">
+                                <rect key="frame" x="0.0" y="0.0" width="248" height="234"/>
+                                <color key="backgroundColor" red="0.99516481160000003" green="0.1915763915" blue="0.84317743779999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Mrt-4d-CCi" firstAttribute="top" secondItem="IAj-m6-aFU" secondAttribute="top" id="7Zg-9j-1ar"/>
+                            <constraint firstAttribute="bottom" secondItem="Mrt-4d-CCi" secondAttribute="bottom" id="V8W-9L-mbF"/>
+                            <constraint firstItem="Mrt-4d-CCi" firstAttribute="leading" secondItem="IAj-m6-aFU" secondAttribute="leading" id="Xgn-uI-sPM"/>
+                            <constraint firstAttribute="trailing" secondItem="Mrt-4d-CCi" secondAttribute="trailing" id="lA5-AT-9bZ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="IAj-m6-aFU" secondAttribute="bottom" id="8aM-7a-s23"/>
+                <constraint firstAttribute="trailing" secondItem="IAj-m6-aFU" secondAttribute="trailing" id="8sa-9D-GHv"/>
+                <constraint firstItem="IAj-m6-aFU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="GYC-wM-iaj"/>
+                <constraint firstItem="IAj-m6-aFU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="OEN-Jy-W7J"/>
+            </constraints>
+            <size key="customSize" width="248" height="234"/>
+            <connections>
+                <outlet property="imgView" destination="Mrt-4d-CCi" id="sV8-1A-keV"/>
+            </connections>
+            <point key="canvasLocation" x="234.78260869565219" y="200.22321428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
